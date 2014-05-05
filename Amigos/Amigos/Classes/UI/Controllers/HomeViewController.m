@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "BALHandler.h"
 
 @interface HomeViewController ()
 
@@ -27,6 +28,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)loadPatent {
+
+    BALHandler *balHandler = [BALHandler new];
+    [balHandler performRequest:BALTypePatentDBInitailizer parameters:nil block:^(id response, NSError *error) {
+        NSLog(@" response : %@", response);
+        NSLog(@" error : %@", error);
+    }];
 }
 
 - (void)didReceiveMemoryWarning

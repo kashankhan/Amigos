@@ -40,8 +40,7 @@
         citYrs3p = [patentInfo valueForKey:@"citYrs3p"];
         citYrs5p = [patentInfo valueForKey:@"citYrs5p"];
         
-        patent = [Patent MR_createEntity];
-        //patent = [self.coreDataHelper getPatent:familyInPaDocId];
+        patent = [self.coreDataHelper getPatent:familyInPaDocId];
         
         [patent setFamilyInPaDocId:familyInPaDocId];
         [patent setAAuthority:aAuthority];
@@ -57,6 +56,7 @@
     }//for
     
         NSLog(@" helo : %d", [patents count]);
+    [AmigosCoreDataHelper saveContext];
     
     return patents;
     
