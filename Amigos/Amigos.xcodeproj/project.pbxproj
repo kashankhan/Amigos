@@ -82,6 +82,7 @@
 		C0670E2F1917B7B10090BA8A /* NSString+HTML_Striper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670DF21917B7B10090BA8A /* NSString+HTML_Striper.m */; };
 		C0670E311917B7E70090BA8A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0670E301917B7E70090BA8A /* CoreData.framework */; };
 		C0670E331917D3630090BA8A /* Amigos.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C0670E321917D3630090BA8A /* Amigos.sqlite */; };
+		C0670E361917D4BF0090BA8A /* SwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670E351917D4BF0090BA8A /* SwitchTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -238,6 +239,8 @@
 		C0670DF21917B7B10090BA8A /* NSString+HTML_Striper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML_Striper.m"; sourceTree = "<group>"; };
 		C0670E301917B7E70090BA8A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C0670E321917D3630090BA8A /* Amigos.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amigos.sqlite; sourceTree = "<group>"; };
+		C0670E341917D4BF0090BA8A /* SwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchTableViewCell.h; sourceTree = "<group>"; };
+		C0670E351917D4BF0090BA8A /* SwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -601,6 +604,8 @@
 		C0670DEE1917B7B10090BA8A /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				C0670E341917D4BF0090BA8A /* SwitchTableViewCell.h */,
+				C0670E351917D4BF0090BA8A /* SwitchTableViewCell.m */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -732,6 +737,7 @@
 				C0670DF31917B7B10090BA8A /* AppDelegate.m in Sources */,
 				C0670DFE1917B7B10090BA8A /* AFHTTPRequestOperationManager.m in Sources */,
 				C0670E0A1917B7B10090BA8A /* NSObject+MagicalDataImport.m in Sources */,
+				C0670E361917D4BF0090BA8A /* SwitchTableViewCell.m in Sources */,
 				C0670E241917B7B10090BA8A /* UIImageView+AFNetworking.m in Sources */,
 				C0670E2D1917B7B10090BA8A /* PatentsTableViewController.m in Sources */,
 				C0670E181917B7B10090BA8A /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
