@@ -18,7 +18,7 @@
     
     switch (parseType) {
         case ParseTypePatentDBInitailizier:
-            parser = [[PatentDBInitializeParser alloc] init];
+            parser = [PatentDBInitializeParser new];
             break;
             
         default:

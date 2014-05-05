@@ -30,18 +30,20 @@
     
     for (NSDictionary *patentInfo  in object) {
         
-        familyInPaDocId = [patentInfo valueForKey:@"familyInPaDocId"];
-        aAuthority = [patentInfo valueForKey:@"aAuthority"];
-        aNumber = [patentInfo valueForKey:@"aNumber"];
-        aDate = [patentInfo valueForKey:@"aDate"];
-        pAuthority = [patentInfo valueForKey:@"pAuthority"];
-        pNumber = [patentInfo valueForKey:@"pNumber"];
-        pKind = [patentInfo valueForKey:@"pKind"];
-        citYrs3p = [patentInfo valueForKey:@"citYrs3p"];
-        citYrs5p = [patentInfo valueForKey:@"citYrs5p"];
+        familyInPaDocId = [[patentInfo valueForKey:@"familyinpadoc_id"] stringValue];
+        aAuthority = [patentInfo valueForKey:@"aauthority"];
+        aNumber = [patentInfo valueForKey:@"anumber"];
+        aDate = [patentInfo valueForKey:@"adate"];
+        pAuthority = [patentInfo valueForKey:@"pauthority"];
+        pNumber = [patentInfo valueForKey:@"pnumber"];
+        pKind = [patentInfo valueForKey:@"pkind"];
+        citYrs3p = [[patentInfo valueForKey:@"cit_yrs3_p"] stringValue];
+        citYrs5p = [[patentInfo valueForKey:@"cit_yrs5_p"] stringValue];
         
-        patent = [Patent MR_createEntity];
+        NSArray *patentFinder = [Patent MR_findByAttribute:@"familyInPaDocId" withValue:familyInPaDocId];
         
+        patent = ([patentFinder count]) ? [patentFinder lastObject] : [Patent MR_createEntity];
+
         [patent setFamilyInPaDocId:familyInPaDocId];
         [patent setAAuthority:aAuthority];
         [patent setANumber:aNumber];
@@ -54,9 +56,6 @@
         
         [patents addObject:patent];
     }//for
-    
-        NSLog(@" helo : %d", [patents count]);
-
     
     return patents;
     

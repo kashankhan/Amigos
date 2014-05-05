@@ -26,7 +26,6 @@
 - (void)performRequest:(id)parameters block:(BALBlock)block {
    
     id object = [self getContent];
-    NSLog(@"object : %@",object);
     if (block) {
         object =  [self parse:ParseTypePatentDBInitailizier object:object];
         block(object, nil);
