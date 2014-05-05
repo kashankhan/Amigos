@@ -24,7 +24,6 @@
 		C0670DF51917B7B10090BA8A /* BaseBAL.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670D681917B7B10090BA8A /* BaseBAL.m */; };
 		C0670DF61917B7B10090BA8A /* PatentDBInitializeBAL.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670D6A1917B7B10090BA8A /* PatentDBInitializeBAL.m */; };
 		C0670DF71917B7B10090BA8A /* Amigos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0670D6C1917B7B10090BA8A /* Amigos.xcdatamodeld */; };
-		C0670DF81917B7B10090BA8A /* Patent.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670D701917B7B10090BA8A /* Patent.m */; };
 		C0670DF91917B7B10090BA8A /* patent.json in Resources */ = {isa = PBXBuildFile; fileRef = C0670D711917B7B10090BA8A /* patent.json */; };
 		C0670DFA1917B7B10090BA8A /* BaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670D741917B7B10090BA8A /* BaseParser.m */; };
 		C0670DFB1917B7B10090BA8A /* ParserHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670D761917B7B10090BA8A /* ParserHandler.m */; };
@@ -81,8 +80,9 @@
 		C0670E2E1917B7B10090BA8A /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670DED1917B7B10090BA8A /* SignUpViewController.m */; };
 		C0670E2F1917B7B10090BA8A /* NSString+HTML_Striper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670DF21917B7B10090BA8A /* NSString+HTML_Striper.m */; };
 		C0670E311917B7E70090BA8A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0670E301917B7E70090BA8A /* CoreData.framework */; };
-		C0670E331917D3630090BA8A /* Amigos.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C0670E321917D3630090BA8A /* Amigos.sqlite */; };
 		C0670E361917D4BF0090BA8A /* SwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670E351917D4BF0090BA8A /* SwitchTableViewCell.m */; };
+		C0670E391917DDD10090BA8A /* SearchCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670E381917DDD10090BA8A /* SearchCriteria.m */; };
+		C0670E3C1917DDD10090BA8A /* Patent.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670E3B1917DDD10090BA8A /* Patent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,8 +120,6 @@
 		C0670D691917B7B10090BA8A /* PatentDBInitializeBAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatentDBInitializeBAL.h; sourceTree = "<group>"; };
 		C0670D6A1917B7B10090BA8A /* PatentDBInitializeBAL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatentDBInitializeBAL.m; sourceTree = "<group>"; };
 		C0670D6D1917B7B10090BA8A /* Amigos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Amigos.xcdatamodel; sourceTree = "<group>"; };
-		C0670D6F1917B7B10090BA8A /* Patent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patent.h; sourceTree = "<group>"; };
-		C0670D701917B7B10090BA8A /* Patent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patent.m; sourceTree = "<group>"; };
 		C0670D711917B7B10090BA8A /* patent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = patent.json; sourceTree = "<group>"; };
 		C0670D731917B7B10090BA8A /* BaseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseParser.h; sourceTree = "<group>"; };
 		C0670D741917B7B10090BA8A /* BaseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseParser.m; sourceTree = "<group>"; };
@@ -238,9 +236,12 @@
 		C0670DF11917B7B10090BA8A /* NSString+HTML_Striper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML_Striper.h"; sourceTree = "<group>"; };
 		C0670DF21917B7B10090BA8A /* NSString+HTML_Striper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML_Striper.m"; sourceTree = "<group>"; };
 		C0670E301917B7E70090BA8A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		C0670E321917D3630090BA8A /* Amigos.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amigos.sqlite; sourceTree = "<group>"; };
 		C0670E341917D4BF0090BA8A /* SwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchTableViewCell.h; sourceTree = "<group>"; };
 		C0670E351917D4BF0090BA8A /* SwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchTableViewCell.m; sourceTree = "<group>"; };
+		C0670E371917DDD10090BA8A /* SearchCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCriteria.h; sourceTree = "<group>"; };
+		C0670E381917DDD10090BA8A /* SearchCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCriteria.m; sourceTree = "<group>"; };
+		C0670E3A1917DDD10090BA8A /* Patent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patent.h; sourceTree = "<group>"; };
+		C0670E3B1917DDD10090BA8A /* Patent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,7 +379,6 @@
 		C0670D6B1917B7B10090BA8A /* DAL */ = {
 			isa = PBXGroup;
 			children = (
-				C0670E321917D3630090BA8A /* Amigos.sqlite */,
 				C0670D6C1917B7B10090BA8A /* Amigos.xcdatamodeld */,
 				C0670D6E1917B7B10090BA8A /* Model */,
 				C0670D711917B7B10090BA8A /* patent.json */,
@@ -389,8 +389,10 @@
 		C0670D6E1917B7B10090BA8A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C0670D6F1917B7B10090BA8A /* Patent.h */,
-				C0670D701917B7B10090BA8A /* Patent.m */,
+				C0670E3A1917DDD10090BA8A /* Patent.h */,
+				C0670E3B1917DDD10090BA8A /* Patent.m */,
+				C0670E371917DDD10090BA8A /* SearchCriteria.h */,
+				C0670E381917DDD10090BA8A /* SearchCriteria.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -707,7 +709,6 @@
 				C0670C5B1917B3240090BA8A /* InfoPlist.strings in Resources */,
 				C0670C641917B3240090BA8A /* Main.storyboard in Resources */,
 				C0670DF91917B7B10090BA8A /* patent.json in Resources */,
-				C0670E331917D3630090BA8A /* Amigos.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,6 +732,7 @@
 				C0670E021917B7B10090BA8A /* AFURLConnectionOperation.m in Sources */,
 				C0670E0B1917B7B10090BA8A /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
 				C0670DF61917B7B10090BA8A /* PatentDBInitializeBAL.m in Sources */,
+				C0670E3C1917DDD10090BA8A /* Patent.m in Sources */,
 				C0670E0D1917B7B10090BA8A /* NSManagedObject+MagicalAggregation.m in Sources */,
 				C0670E171917B7B10090BA8A /* NSPersistentStore+MagicalRecord.m in Sources */,
 				C0670E011917B7B10090BA8A /* AFSecurityPolicy.m in Sources */,
@@ -744,6 +746,7 @@
 				C0670E061917B7B10090BA8A /* MagicalImportFunctions.m in Sources */,
 				C0670E201917B7B10090BA8A /* AFNetworkActivityIndicatorManager.m in Sources */,
 				C0670E071917B7B10090BA8A /* NSAttributeDescription+MagicalDataImport.m in Sources */,
+				C0670E391917DDD10090BA8A /* SearchCriteria.m in Sources */,
 				C0670C5D1917B3240090BA8A /* main.m in Sources */,
 				C0670E1C1917B7B10090BA8A /* MagicalRecord+Options.m in Sources */,
 				C0670E081917B7B10090BA8A /* NSEntityDescription+MagicalDataImport.m in Sources */,
@@ -770,7 +773,6 @@
 				C0670E121917B7B10090BA8A /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				C0670E211917B7B10090BA8A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				C0670E1F1917B7B10090BA8A /* MagicalRecord.m in Sources */,
-				C0670DF81917B7B10090BA8A /* Patent.m in Sources */,
 				C0670DF71917B7B10090BA8A /* Amigos.xcdatamodeld in Sources */,
 				C0670E031917B7B10090BA8A /* AFURLRequestSerialization.m in Sources */,
 				C0670E191917B7B10090BA8A /* MagicalRecord+Actions.m in Sources */,
