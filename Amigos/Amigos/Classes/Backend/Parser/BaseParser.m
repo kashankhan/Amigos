@@ -10,14 +10,6 @@
 
 @implementation BaseParser
 
-- (id)init {
-
-    self = [super init];
-    if (self) {
-        self.coreDataHelper = [AmigosCoreDataHelper new];
-    }
-    return self;
-}
 
 - (id)parse:(id)object {
     

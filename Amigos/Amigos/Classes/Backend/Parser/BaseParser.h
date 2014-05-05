@@ -7,11 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AmigosCoreDataHelper.h"
+
 
 @interface BaseParser : NSObject
-
-@property (nonatomic, retain) AmigosCoreDataHelper *coreDataHelper;
 
 - (id)parse:(id)object;
 @end

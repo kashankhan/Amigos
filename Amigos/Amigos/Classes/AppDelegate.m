@@ -7,12 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "BALHandler.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self initailizeApplicationDefaultSettings];
     return YES;
 }
 							
@@ -41,6 +43,16 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)initailizeApplicationDefaultSettings {
+
+    [MagicalRecord setupAutoMigratingCoreDataStack];
+    BALHandler *balHandler = [BALHandler new];
+    [balHandler performRequest:BALTypePatentDBInitailizer parameters:nil block:^(id response, NSError *error) {
+        NSLog(@" response : %@", response);
+        NSLog(@" error : %@", error);
+    }];
 }
 
 @end
