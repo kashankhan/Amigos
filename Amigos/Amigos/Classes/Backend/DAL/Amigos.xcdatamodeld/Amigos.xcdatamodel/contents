@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C1021" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Patent" representedClassName="Patent" syncable="YES">
+        <attribute name="aAuthority" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="aDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="aNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="citYrs3p" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="citYrs5p" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="familyInPaDocId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pAuthority" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pKind" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pNumber" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Patent" positionX="-63" positionY="-18" width="128" height="180"/>
+    </elements>
+</model>
