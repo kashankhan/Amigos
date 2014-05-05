@@ -49,11 +49,11 @@
 - (void)initailizeApplicationDefaultSettings {
 
     [MagicalRecord setupAutoMigratingCoreDataStack];
-    BALHandler *balHandler = [BALHandler new];
-    [balHandler performRequest:BALTypePatentDBInitailizer parameters:nil block:^(id response, NSError *error) {
-        NSLog(@" response : %@", response);
-        NSLog(@" error : %@", error);
-    }];
+//    BALHandler *balHandler = [BALHandler new];
+//    [balHandler performRequest:BALTypePatentDBInitailizer parameters:nil block:^(id response, NSError *error) {
+//        NSLog(@" response : %@", response);
+//        NSLog(@" error : %@", error);
+//    }];
 }
 
 - (void)saveRunningTasks {

@@ -81,6 +81,7 @@
 		C0670E2E1917B7B10090BA8A /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670DED1917B7B10090BA8A /* SignUpViewController.m */; };
 		C0670E2F1917B7B10090BA8A /* NSString+HTML_Striper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670DF21917B7B10090BA8A /* NSString+HTML_Striper.m */; };
 		C0670E311917B7E70090BA8A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0670E301917B7E70090BA8A /* CoreData.framework */; };
+		C0670E331917D3630090BA8A /* Amigos.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C0670E321917D3630090BA8A /* Amigos.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,6 +237,7 @@
 		C0670DF11917B7B10090BA8A /* NSString+HTML_Striper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML_Striper.h"; sourceTree = "<group>"; };
 		C0670DF21917B7B10090BA8A /* NSString+HTML_Striper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML_Striper.m"; sourceTree = "<group>"; };
 		C0670E301917B7E70090BA8A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C0670E321917D3630090BA8A /* Amigos.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amigos.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +375,7 @@
 		C0670D6B1917B7B10090BA8A /* DAL */ = {
 			isa = PBXGroup;
 			children = (
+				C0670E321917D3630090BA8A /* Amigos.sqlite */,
 				C0670D6C1917B7B10090BA8A /* Amigos.xcdatamodeld */,
 				C0670D6E1917B7B10090BA8A /* Model */,
 				C0670D711917B7B10090BA8A /* patent.json */,
@@ -699,6 +702,7 @@
 				C0670C5B1917B3240090BA8A /* InfoPlist.strings in Resources */,
 				C0670C641917B3240090BA8A /* Main.storyboard in Resources */,
 				C0670DF91917B7B10090BA8A /* patent.json in Resources */,
+				C0670E331917D3630090BA8A /* Amigos.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
