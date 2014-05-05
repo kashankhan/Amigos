@@ -19,7 +19,7 @@
     NSString * aAuthority = nil;
     NSString * aNumber = nil;
     NSString * aDate = nil;
-    NSString * pAuthority= nil ;
+    NSString * pAuthority= nil;
     NSString * pNumber = nil;
     NSString * pKind = nil;
     NSString * citYrs3p = nil;
@@ -27,7 +27,7 @@
     
     Patent *patent = nil;
     NSMutableArray *patents = [NSMutableArray new];
-    
+    NSUInteger counter = 1;
     for (NSDictionary *patentInfo  in object) {
         
         familyInPaDocId = [[patentInfo valueForKey:@"familyinpadoc_id"] stringValue];
@@ -40,7 +40,9 @@
         citYrs3p = [[patentInfo valueForKey:@"cit_yrs3_p"] stringValue];
         citYrs5p = [[patentInfo valueForKey:@"cit_yrs5_p"] stringValue];
         
-        NSArray *patentFinder = [Patent MR_findByAttribute:@"familyInPaDocId" withValue:familyInPaDocId];
+        NSLog(@"patentInfo : %@",patentInfo);
+        
+        NSArray *patentFinder = [Patent MR_findByAttribute:@"pNumber" withValue:pNumber];
         
         patent = ([patentFinder count]) ? [patentFinder lastObject] : [Patent MR_createEntity];
 
@@ -55,6 +57,7 @@
         [patent setCitYrs5p:citYrs5p];
         
         [patents addObject:patent];
+        NSLog(@"counter : %d", counter ++);
     }//for
     
     return patents;

@@ -27,8 +27,8 @@
    
     id object = [self getContent];
     if (block) {
-        object =  [self parse:ParseTypePatentDBInitailizier object:object];
-        block(object, nil);
+        id parsedObject =  [self parse:ParseTypePatentDBInitailizier object:object];
+        block(parsedObject, nil);
     }//if
 }
 
