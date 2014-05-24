@@ -9,12 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "ParserHandler.h"
 
+@class AFHTTPRequestOperation;
+
 typedef void (^BALBlock)(id response, NSError *error);
 
 @interface BaseBAL : NSObject
 
 - (void)performRequest:(id)parameters block:(BALBlock)block;
 
-- (id)parse:(ParseType)parseType object:(id)object;
+- (NSURL *)baseUrl;
+
+- (NSString *)requestUrl:(id)parameters;
+
+- (ParseType)getParserType:(id)object;
 
 @end

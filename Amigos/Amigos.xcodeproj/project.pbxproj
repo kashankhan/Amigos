@@ -78,11 +78,13 @@
 		C0670E2C1917B7B10090BA8A /* PatentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670DE91917B7B10090BA8A /* PatentDetailViewController.m */; };
 		C0670E2D1917B7B10090BA8A /* PatentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670DEB1917B7B10090BA8A /* PatentsTableViewController.m */; };
 		C0670E2E1917B7B10090BA8A /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670DED1917B7B10090BA8A /* SignUpViewController.m */; };
-		C0670E2F1917B7B10090BA8A /* NSString+HTML_Striper.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670DF21917B7B10090BA8A /* NSString+HTML_Striper.m */; };
 		C0670E311917B7E70090BA8A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0670E301917B7E70090BA8A /* CoreData.framework */; };
 		C0670E361917D4BF0090BA8A /* SwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670E351917D4BF0090BA8A /* SwitchTableViewCell.m */; };
 		C0670E391917DDD10090BA8A /* SearchCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670E381917DDD10090BA8A /* SearchCriteria.m */; };
 		C0670E3C1917DDD10090BA8A /* Patent.m in Sources */ = {isa = PBXBuildFile; fileRef = C0670E3B1917DDD10090BA8A /* Patent.m */; };
+		C0AEA4E91920CDD600C3C0D3 /* SearchQueryBAL.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AEA4E81920CDD600C3C0D3 /* SearchQueryBAL.m */; };
+		C0AEA4F81920D74400C3C0D3 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AEA4F11920D74400C3C0D3 /* GTMNSString+HTML.m */; };
+		C0AEA4F91920D74400C3C0D3 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AEA4F31920D74400C3C0D3 /* NSString+HTML.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -233,8 +235,6 @@
 		C0670DEB1917B7B10090BA8A /* PatentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatentsTableViewController.m; sourceTree = "<group>"; };
 		C0670DEC1917B7B10090BA8A /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		C0670DED1917B7B10090BA8A /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
-		C0670DF11917B7B10090BA8A /* NSString+HTML_Striper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML_Striper.h"; sourceTree = "<group>"; };
-		C0670DF21917B7B10090BA8A /* NSString+HTML_Striper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML_Striper.m"; sourceTree = "<group>"; };
 		C0670E301917B7E70090BA8A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C0670E341917D4BF0090BA8A /* SwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchTableViewCell.h; sourceTree = "<group>"; };
 		C0670E351917D4BF0090BA8A /* SwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchTableViewCell.m; sourceTree = "<group>"; };
@@ -242,6 +242,12 @@
 		C0670E381917DDD10090BA8A /* SearchCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCriteria.m; sourceTree = "<group>"; };
 		C0670E3A1917DDD10090BA8A /* Patent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patent.h; sourceTree = "<group>"; };
 		C0670E3B1917DDD10090BA8A /* Patent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patent.m; sourceTree = "<group>"; };
+		C0AEA4E71920CDD600C3C0D3 /* SearchQueryBAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchQueryBAL.h; sourceTree = "<group>"; };
+		C0AEA4E81920CDD600C3C0D3 /* SearchQueryBAL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchQueryBAL.m; sourceTree = "<group>"; };
+		C0AEA4F01920D74400C3C0D3 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		C0AEA4F11920D74400C3C0D3 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		C0AEA4F21920D74400C3C0D3 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		C0AEA4F31920D74400C3C0D3 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,10 +351,10 @@
 			children = (
 				C0670D611917B7B10090BA8A /* AppDelegate.h */,
 				C0670D621917B7B10090BA8A /* AppDelegate.m */,
-				C0670D631917B7B10090BA8A /* Backend */,
-				C0670D791917B7B10090BA8A /* ExternalFrameworks */,
 				C0670DDE1917B7B10090BA8A /* UI */,
-				C0670DEF1917B7B10090BA8A /* Utilities */,
+				C0670D631917B7B10090BA8A /* Backend */,
+				C0AEA4EE1920D74400C3C0D3 /* Utilities */,
+				C0670D791917B7B10090BA8A /* ExternalFrameworks */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -372,6 +378,8 @@
 				C0670D681917B7B10090BA8A /* BaseBAL.m */,
 				C0670D691917B7B10090BA8A /* PatentDBInitializeBAL.h */,
 				C0670D6A1917B7B10090BA8A /* PatentDBInitializeBAL.m */,
+				C0AEA4E71920CDD600C3C0D3 /* SearchQueryBAL.h */,
+				C0AEA4E81920CDD600C3C0D3 /* SearchQueryBAL.m */,
 			);
 			path = BAL;
 			sourceTree = "<group>";
@@ -413,8 +421,8 @@
 		C0670D791917B7B10090BA8A /* ExternalFrameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0670D7A1917B7B10090BA8A /* AFNetworking */,
 				C0670D8E1917B7B10090BA8A /* MagicalRecord */,
+				C0670D7A1917B7B10090BA8A /* AFNetworking */,
 				C0670DCC1917B7B10090BA8A /* UIKit+AFNetworking */,
 			);
 			path = ExternalFrameworks;
@@ -612,21 +620,23 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
-		C0670DEF1917B7B10090BA8A /* Utilities */ = {
+		C0AEA4EE1920D74400C3C0D3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				C0670DF01917B7B10090BA8A /* HTML_Striper */,
+				C0AEA4EF1920D74400C3C0D3 /* Catagories */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		C0670DF01917B7B10090BA8A /* HTML_Striper */ = {
+		C0AEA4EF1920D74400C3C0D3 /* Catagories */ = {
 			isa = PBXGroup;
 			children = (
-				C0670DF11917B7B10090BA8A /* NSString+HTML_Striper.h */,
-				C0670DF21917B7B10090BA8A /* NSString+HTML_Striper.m */,
+				C0AEA4F01920D74400C3C0D3 /* GTMNSString+HTML.h */,
+				C0AEA4F11920D74400C3C0D3 /* GTMNSString+HTML.m */,
+				C0AEA4F21920D74400C3C0D3 /* NSString+HTML.h */,
+				C0AEA4F31920D74400C3C0D3 /* NSString+HTML.m */,
 			);
-			path = HTML_Striper;
+			path = Catagories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -740,6 +750,7 @@
 				C0670DFE1917B7B10090BA8A /* AFHTTPRequestOperationManager.m in Sources */,
 				C0670E0A1917B7B10090BA8A /* NSObject+MagicalDataImport.m in Sources */,
 				C0670E361917D4BF0090BA8A /* SwitchTableViewCell.m in Sources */,
+				C0AEA4F81920D74400C3C0D3 /* GTMNSString+HTML.m in Sources */,
 				C0670E241917B7B10090BA8A /* UIImageView+AFNetworking.m in Sources */,
 				C0670E2D1917B7B10090BA8A /* PatentsTableViewController.m in Sources */,
 				C0670E181917B7B10090BA8A /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
@@ -765,6 +776,7 @@
 				C0670E281917B7B10090BA8A /* AdvanceSearchSettingsTableViewController.m in Sources */,
 				C0670E0C1917B7B10090BA8A /* NSString+MagicalDataImport.m in Sources */,
 				C0670E161917B7B10090BA8A /* NSManagedObjectModel+MagicalRecord.m in Sources */,
+				C0AEA4E91920CDD600C3C0D3 /* SearchQueryBAL.m in Sources */,
 				C0670E111917B7B10090BA8A /* NSManagedObject+MagicalRequests.m in Sources */,
 				C0670E291917B7B10090BA8A /* ForgotPasswordViewController.m in Sources */,
 				C0670E051917B7B10090BA8A /* AFURLSessionManager.m in Sources */,
@@ -782,8 +794,8 @@
 				C0670E2A1917B7B10090BA8A /* HomeViewController.m in Sources */,
 				C0670DFA1917B7B10090BA8A /* BaseParser.m in Sources */,
 				C0670E0E1917B7B10090BA8A /* NSManagedObject+MagicalDataImport.m in Sources */,
+				C0AEA4F91920D74400C3C0D3 /* NSString+HTML.m in Sources */,
 				C0670E261917B7B10090BA8A /* UIRefreshControl+AFNetworking.m in Sources */,
-				C0670E2F1917B7B10090BA8A /* NSString+HTML_Striper.m in Sources */,
 				C0670E231917B7B10090BA8A /* UIButton+AFNetworking.m in Sources */,
 				C0670DFD1917B7B10090BA8A /* AFHTTPRequestOperation.m in Sources */,
 				C0670E2B1917B7B10090BA8A /* LoginViewController.m in Sources */,

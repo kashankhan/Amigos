@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "BALHandler.h"
 
 @interface HomeViewController ()
 
@@ -27,6 +28,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self performSearch:@"Hello World"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,4 +49,13 @@
 }
 */
 
+- (void)performSearch:(NSString *)searchQuery {
+
+
+    BALHandler *handler  = [BALHandler new];
+   
+    [handler performRequest:BALTypeSearchQuery parameters:searchQuery block:^(id response, NSError *error) {
+        NSLog(@" response : %@", response);
+    }];
+}
 @end

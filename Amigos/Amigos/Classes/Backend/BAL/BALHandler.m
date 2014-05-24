@@ -8,6 +8,7 @@
 
 #import "BALHandler.h"
 #import "PatentDBInitializeBAL.h"
+#import "SearchQueryBAL.h"
 
 @implementation BALHandler
 
@@ -16,9 +17,16 @@
     BaseBAL *bal = nil;
     
     switch (balType) {
+            
         case BALTypePatentDBInitailizer:
             bal = [PatentDBInitializeBAL new];
             break;
+            
+        case BALTypeSearchQuery:
+            bal = [SearchQueryBAL new];
+            break;
+            
+            
             
         default:
             break;
